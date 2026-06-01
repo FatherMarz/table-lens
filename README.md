@@ -54,3 +54,7 @@ Per-tab state. Navigating away or closing the tab clears the lens. No background
 - `content.js` — detection, Shadow-DOM panel + overlays, drag, copy.
 - `content.css` — single rule for active-table `scroll-margin`.
 - `icons/` — 16/32/48/128 PNGs.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
