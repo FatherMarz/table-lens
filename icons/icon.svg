@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="lensClip">
+      <circle cx="56" cy="58" r="28"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background: paper offwhite -->
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22"
+        fill="#FAFAF7" stroke="#0F1419" stroke-opacity="0.14" stroke-width="2"/>
+
+  <!-- Faint table rows in the background -->
+  <g opacity="0.14">
+    <rect x="22" y="34" width="84" height="10" rx="2" fill="#0F1419"/>
+    <rect x="22" y="50" width="84" height="10" rx="2" fill="#0F1419"/>
+    <rect x="22" y="66" width="84" height="10" rx="2" fill="#0F1419"/>
+    <rect x="22" y="82" width="84" height="10" rx="2" fill="#0F1419"/>
+  </g>
+
+  <!-- Rows revealed through the lens: more contrast, middle row is signal teal -->
+  <g clip-path="url(#lensClip)">
+    <rect x="22" y="34" width="84" height="10" rx="2" fill="#0F1419" fill-opacity="0.55"/>
+    <rect x="22" y="50" width="84" height="10" rx="2" fill="#00A3A3"/>
+    <rect x="22" y="66" width="84" height="10" rx="2" fill="#0F1419" fill-opacity="0.55"/>
+  </g>
+
+  <!-- Lens ring -->
+  <circle cx="56" cy="58" r="28" fill="none" stroke="#00A3A3" stroke-width="7"/>
+
+  <!-- Lens handle -->
+  <line x1="78" y1="80" x2="102" y2="104"
+        stroke="#00A3A3" stroke-width="11" stroke-linecap="round"/>
+</svg>

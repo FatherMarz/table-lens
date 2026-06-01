@@ -1,0 +1,8 @@
+/* Only one rule lives on the page itself — the active-table outline.
+   All UI chrome is inside a Shadow DOM so page CSS can't leak in. */
+
+/* Only used for scroll-margin so scrollIntoView leaves room for our pill.
+   The highlight itself is drawn as a Shadow-DOM overlay, not via outline. */
+[data-table-lens-active="true"] {
+  scroll-margin: 100px !important;
+}

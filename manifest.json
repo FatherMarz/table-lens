@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Table Lens",
+  "version": "0.1.0",
+  "description": "Find tabular data on any page. Cycle through detected tables. Preview, copy CSV. Toggle on or off from the toolbar.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_title": "Table Lens",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
